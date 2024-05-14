@@ -5,7 +5,7 @@ let endSpam = false
 //clickDelay min value: 1, or it will cause errors when trying disconnecting a person that is already in the channel when starting bot, unknown cause
 //loopDelay min value: 0, no know issues
 //disconnectDelay min value: 300, reccomended value: 500, setting it below 300 will make the bot fail, since that is the average time for a user to be disconnected after clicking disconnect button
-const startSpamBot = (target, clickDelay = 1, loopDelay = 0, disconnectDelay = 0) => {
+const startSpamBot = (target, clickDelay = 1, loopDelay = 0, disconnectDelay = 500) => {
     const usersClass = "voiceUser__0470a clickable__137bc userSmall_e40291"
     const buttonId = "user-context-voice-disconnect"
 
